@@ -3,6 +3,8 @@
 require __DIR__ .  '/vendor/autoload.php';
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+echo "hola";
+exit;
 ?>
 
 <!DOCTYPE html>
