@@ -6,11 +6,11 @@ error_reporting(E_ALL);
 //require __DIR__ .  '/vendor/autoload.php';
 
 // SDK de Mercado Pago
-use MercadoPago\SDK;
+use MercadoPago\SDK as MercadoPago\SDK;
 
 
 // Agrega credenciales
-SDK::setAccessToken('PROD_ACCESS_TOKEN');
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 echo "hola";
 exit;
 ?>
