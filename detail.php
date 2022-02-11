@@ -3,11 +3,11 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-use MercadoPago\SDK;
-
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 // Agrega credenciales
+
+use MercadoPago\SDK;
 
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
