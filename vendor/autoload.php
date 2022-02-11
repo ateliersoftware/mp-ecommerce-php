@@ -1,4 +1,5 @@
 <?
+echo "tututut";
 spl_autoload_register(function($className)
 {
     $namespace=str_replace("\\","/",__NAMESPACE__);
