@@ -1,5 +1,5 @@
 <?
-spl_autoload_register("MercadoPago");
+spl_autoload_register("MercadoPago/SDK");
 
 spl_autoload_register(function($className)
 {
