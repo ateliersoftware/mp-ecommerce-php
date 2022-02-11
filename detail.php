@@ -10,6 +10,7 @@ require __DIR__ . '/MercadoPago/Http/HttpRequest.php';
 require __DIR__ . '/MercadoPago/Http/CurlRequest.php';
 require __DIR__ . '/MercadoPago/Config/AbstractConfig.php';
 require __DIR__ . '/MercadoPago/Config.php';
+require __DIR__ . '/MercadoPago/Manager.php';
 
 // SDK de Mercado Pago
 //use MercadoPago\SDK as MercadoPago\SDK;
