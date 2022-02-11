@@ -35,6 +35,10 @@ class SDK
         Entity::setManager(self::$_manager);
     }
     
+    public static function a(){
+      echo 'lol';
+    }
+    
     /**
      * Set Access Token for SDK .
      */
