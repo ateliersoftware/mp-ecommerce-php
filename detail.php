@@ -9,10 +9,7 @@ require __DIR__ .  '/vendor/autoload.php';
 
 // SDK de Mercado Pago
 use MercadoPago\SDK;
-echo "ddd";
-exit;
 
-$mp = new SDK();
 
 // Agrega credenciales
 SDK::setAccessToken('PROD_ACCESS_TOKEN');
