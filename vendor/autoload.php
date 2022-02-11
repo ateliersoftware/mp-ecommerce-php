@@ -7,4 +7,6 @@ function __autoload($class)
     exit;
     require end($parts) . '.php';
 }
+
+__autoload("MercadoPago/SDK");
 ?>
