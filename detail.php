@@ -10,7 +10,7 @@ use MercadoPago\SDK as MercadoPago\SDK;
 
 
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+echo var_dump(MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN'));
 echo "hola";
 exit;
 ?>
