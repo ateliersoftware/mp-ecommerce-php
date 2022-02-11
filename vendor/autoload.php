@@ -1,6 +1,4 @@
 <?
-spl_autoload_register("MercadoPago/SDK");
-
 spl_autoload_register(function($className)
 {
     $namespace=str_replace("\\","/",__NAMESPACE__);
