@@ -9,10 +9,11 @@ require __DIR__ . '/MercadoPago/SDK.php';
 // SDK de Mercado Pago
 //use MercadoPago\SDK as MercadoPago\SDK;
 
-//MercadoPago\SDK::a();
+
 echo "hola";
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+MercadoPago\SDK::a();
 ?>
 
 <!DOCTYPE html>
