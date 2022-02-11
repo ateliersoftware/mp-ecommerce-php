@@ -8,7 +8,7 @@ require __DIR__ .  '/vendor/autoload.php';
 
 
 // SDK de Mercado Pago
-use MercadoPago\SDK;
+use MercadoPago/SDK;
 
 
 $mp = new SDK();
