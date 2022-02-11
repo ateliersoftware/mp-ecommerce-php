@@ -8,9 +8,9 @@ error_reporting(E_ALL);
 // SDK de Mercado Pago
 use MercadoPago\SDK as MercadoPago\SDK;
 
-
+MercadoPago\SDK::a();
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+//MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 
 <!DOCTYPE html>
