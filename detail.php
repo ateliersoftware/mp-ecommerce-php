@@ -3,9 +3,9 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-//require __DIR__ .  '/vendor/autoload.php';
-require __DIR__ . '/MercadoPago/SDK.php';
-require __DIR__ . '/MercadoPago/RestClient.php';
+require __DIR__ .  '/vendor/autoload.php';
+//require __DIR__ . '/MercadoPago/SDK.php';
+//require __DIR__ . '/MercadoPago/RestClient.php';
 
 // SDK de Mercado Pago
 //use MercadoPago\SDK as MercadoPago\SDK;
