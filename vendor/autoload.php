@@ -7,4 +7,6 @@ function __autoload($class)
 }
 
 __autoload("MercadoPago/SDK");
+echo  "sjsksk";
+
 ?>
