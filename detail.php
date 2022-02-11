@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+//MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 echo "hola";
 ?>
 
