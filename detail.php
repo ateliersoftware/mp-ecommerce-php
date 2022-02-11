@@ -15,6 +15,8 @@ $mp = new SDK();
 
 // Agrega credenciales
 SDK::setAccessToken('PROD_ACCESS_TOKEN');
+echo "hola";
+exit;
 ?>
 
 <!DOCTYPE html>
