@@ -12,7 +12,7 @@ require __DIR__ . '/MercadoPago/SDK.php';
 //MercadoPago\SDK::a();
 echo "hola";
 // Agrega credenciales
-//MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
 ?>
 
 <!DOCTYPE html>
