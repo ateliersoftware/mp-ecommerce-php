@@ -10,6 +10,7 @@ require __DIR__ .  '/vendor/autoload.php';
 // SDK de Mercado Pago
 use MercadoPago\SDK;
 
+
 $mp = new SDK();
 
 // Agrega credenciales
