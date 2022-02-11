@@ -11,7 +11,7 @@ require __DIR__ .  '/vendor/autoload.php';
 use MercadoPago/SDK;
 
 
-$mp = new SDK();
+$mp = new SDKdd();
 
 // Agrega credenciales
 SDK::setAccessToken('PROD_ACCESS_TOKEN');
