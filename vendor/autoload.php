@@ -1,11 +1,8 @@
 <?
-spl_autoload_register('myAutoloader');
-
-function myAutoloader($className)
+function __autoload($class)
 {
-    //$path = '/path/to/class/';
-    $path = 'MercadoPago/';
-
-    include $path.$className.'.php';
+    // Adapt this depending on your directory structure
+    $parts = explode('\\', $class);
+    require end($parts) . '.php';
 }
 ?>
