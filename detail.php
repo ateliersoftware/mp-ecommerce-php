@@ -14,6 +14,7 @@ require __DIR__ . '/lib/Doctrine/Common/Annotations/AnnotationReader.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/Annotation.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/Annotation/Target.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/ImplicitlyIgnoredAnnotationNames.php';
+require __DIR__ . '/MercadoPago/Version.php';
 require __DIR__ . '/MercadoPago/Entity.php';
 require __DIR__ . '/MercadoPago/SDK.php';
 require __DIR__ . '/MercadoPago/RestClient.php';
