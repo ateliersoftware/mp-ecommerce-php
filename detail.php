@@ -46,6 +46,9 @@ $preference = new MercadoPago\Preference();
 $paymentMehods = new MercadoPago\PaymentMethod();
         
 $payer = new MercadoPago\Payer();
+$payer->name = "Lalo";
+$payer->lastname = "Landa";
+$payer->email = "test_user_63274575@testuser.com";
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
