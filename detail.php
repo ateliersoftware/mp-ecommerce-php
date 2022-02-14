@@ -45,6 +45,13 @@ $item->title = 'Mi producto';
 $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
+
+$preference->back_urls = [
+        "success"=> "https://mp-certification.herokuapp.com/success.php",
+        "failure"=> "https://mp-certification.herokuapp.com/failure.php",
+        "pending"=> "https://mp-certification.herokuapp.com/pending.php"];
+    },
+
 $preference->save();
 
 ?>
