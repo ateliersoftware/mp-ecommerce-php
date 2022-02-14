@@ -28,6 +28,8 @@ require __DIR__ . '/MercadoPago/Manager.php';
 require __DIR__ . '/MercadoPago/MetaDataReader.php';
 require __DIR__ . '/MercadoPago/Entities/Preference.php';
 require __DIR__ . '/MercadoPago/Entities/Shared/Item.php';
+require __DIR__ . '/MercadoPago/Entities/Shared/Payer.php';
+require __DIR__ . '/MercadoPago/Entities/Shared/PaymentMethod.php';
 
 $url = "https://mp-certification.herokuapp.com/";
 
@@ -40,6 +42,10 @@ MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac13000");
 
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
+
+$paymentMehods = new MercadoPago\PaymentMethod();
+        
+$payer = new MercadoPago\Payer();
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
@@ -56,6 +62,8 @@ $preference->back_urls = [
         "success"=> $url."mp-success.php",
         "failure"=> $url."mp-failure.php",
         "pending"=> $url."mp-pending.php"];
+
+$preference->external_reference = "aldana@ateliersoftware.com.ar";
 
 $preference->save();
 ?>
