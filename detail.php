@@ -41,7 +41,9 @@ $preference = new MercadoPago\Preference();
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
-$item->title = 'Mi producto';
+$item->id = '1234';
+$item->title = $_POST['title'];
+$item->description = 'Dispositivo móvil de Tienda e-commerce';
 $item->quantity = 1;
 $item->unit_price = 75.56;
 $preference->items = array($item);
@@ -50,10 +52,9 @@ $preference->back_urls = [
         "success"=> "https://mp-certification.herokuapp.com/mp-success.php",
         "failure"=> "https://mp-certification.herokuapp.com/mp-failure.php",
         "pending"=> "https://mp-certification.herokuapp.com/mp-pending.php"];
-    },
 
 $preference->save();
-
+exit;
 ?>
 
 <!DOCTYPE html>
