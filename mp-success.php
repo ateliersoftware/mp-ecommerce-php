@@ -7,7 +7,11 @@ echo "lol";
   $fp = fopen( __DIR__ .'/logs/success.log', 'a');
   fwrite($fp, $req_dump);
   fclose($fp);
-  print($_REQUEST);
-  print($_GET);
+
+  $req_dump = print_r($_GET, TRUE);
+  $fp = fopen( __DIR__ .'/logs/success.log', 'a');
+  fwrite($fp, $req_dump);
+  fclose($fp);
+
 echo "hola";
 ?>
