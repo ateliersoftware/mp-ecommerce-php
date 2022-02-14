@@ -8,6 +8,7 @@ require __DIR__ . '/lib/Doctrine/Common/Annotations/Reader.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/AnnotationRegistry.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/AnnotationReader.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/Annotation.php';
+require __DIR__ . '/lib/Doctrine/Common/Annotations/ImplicitlyIgnoredAnnotationNames.php';
 require __DIR__ . '/MercadoPago/SDK.php';
 require __DIR__ . '/MercadoPago/RestClient.php';
 require __DIR__ . '/MercadoPago/Http/HttpRequest.php';
