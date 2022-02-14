@@ -8,16 +8,16 @@
   
   $fp = fopen( __DIR__ .'/success.log', 'a');
 
-fwrite("request");
+fwrite($fp, "request");
 $req_dump = print_r($_REQUEST, TRUE);
   fwrite($fp, $req_dump);
 
-  fwrite("get");
+  fwrite($fp, "get");
 
   $req_dump = print_r($_GET, TRUE);
   fwrite($fp, $req_dump);
 
-fwrite("post");
+fwrite($fp, "post");
   $req_dump = print_r($_POST, TRUE);
   fwrite($fp, $req_dump);
   fclose($fp);
