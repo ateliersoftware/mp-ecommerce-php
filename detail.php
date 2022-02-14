@@ -54,7 +54,6 @@ $preference->back_urls = [
         "pending"=> "https://mp-certification.herokuapp.com/mp-pending.php"];
 
 $preference->save();
-exit;
 ?>
 
 <!DOCTYPE html>
