@@ -33,7 +33,7 @@ require __DIR__ . '/MercadoPago/Entities/Shared/Item.php';
 //use MercadoPago\SDK as MercadoPago\SDK;
 
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('APP_USR-5617253480619740-020220-3bce461ec6dcba2e2594432de3a420d2-16319998');
+MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
 
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
