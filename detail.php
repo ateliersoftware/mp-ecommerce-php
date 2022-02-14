@@ -48,7 +48,7 @@ $item->title = $_POST['title'];
 $item->description = 'Dispositivo móvil de Tienda e-commerce';
 $item->quantity = 1;
 $item->unit_price = $_POST['price'];
-$item->picture_url = $_POST['img'];
+$item->picture_url = $url.$_POST['img'];
 //$item->currency_id = 
 $preference->items = array($item);
 
@@ -193,7 +193,6 @@ $preference->save();
                                         </h3>
                                         <h3 >
                                             <?php echo $_POST['unit'] ?> unidad
-                                                <?=$url.$_POST['img']?>
                                         </h3>
                                     </div>
                                     <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
