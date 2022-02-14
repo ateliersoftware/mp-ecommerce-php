@@ -24,12 +24,25 @@ require __DIR__ . '/MercadoPago/Config/AbstractConfig.php';
 require __DIR__ . '/MercadoPago/Config.php';
 require __DIR__ . '/MercadoPago/Manager.php';
 require __DIR__ . '/MercadoPago/MetaDataReader.php';
+require __DIR__ . '/MercadoPago/Item.php';
 
 // SDK de Mercado Pago
 //use MercadoPago\SDK as MercadoPago\SDK;
 
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('APP_USR-5617253480619740-020220-3bce461ec6dcba2e2594432de3a420d2-16319998');
+
+// Crea un objeto de preferencia
+$preference = new MercadoPago\Preference();
+
+// Crea un ítem en la preferencia
+$item = new MercadoPago\Item();
+$item->title = 'Mi producto';
+$item->quantity = 1;
+$item->unit_price = 75.56;
+$preference->items = array($item);
+$preference->save();
+
 ?>
 
 <!DOCTYPE html>
@@ -168,6 +181,7 @@ MercadoPago\SDK::setAccessToken('APP_USR-5617253480619740-020220-3bce461ec6dcba2
                                         </h3>
                                     </div>
                                     <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="<?php echo $preference->id; ?>"></script>
                                 </div>
                             </div>
                         </div>
