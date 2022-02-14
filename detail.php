@@ -20,6 +20,7 @@ require __DIR__ . '/MercadoPago/MetaDataReader.php';
 echo "hola";
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('PROD_ACCESS_TOKEN');
+exit;
 ?>
 
 <!DOCTYPE html>
