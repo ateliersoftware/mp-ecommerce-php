@@ -87,6 +87,8 @@ $preference->save();
     
     // SDK MercadoPago.js V2
     <script src="https://sdk.mercadopago.com/js/v2"></script>
+        
+    <script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
