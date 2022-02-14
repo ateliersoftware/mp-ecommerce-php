@@ -15,11 +15,11 @@ echo "lol";
   echo var_dump(fwrite($fp, $req_dump));
   fclose($fp);
 
-$actual = file_get_contents($fichero);
+/*$actual = file_get_contents($fichero);
 // Añade una nueva persona al fichero
 $actual .= "John Smith\n";
 // Escribe el contenido al fichero
-echo var_dump(file_put_contents($fichero, $actual));
+echo var_dump(file_put_contents($fichero, $actual));*/
 
 echo "hola";
 ?>
