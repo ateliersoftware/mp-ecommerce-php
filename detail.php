@@ -4,7 +4,7 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 //require __DIR__ .  '/vendor/autoload.php';
-require __DIR__ . '/lib/Doctrine/Common/Annotations/AnnotationRegistry';
+require __DIR__ . '/lib/Doctrine/Common/Annotations/AnnotationRegistry.php';
 require __DIR__ . '/MercadoPago/SDK.php';
 require __DIR__ . '/MercadoPago/RestClient.php';
 require __DIR__ . '/MercadoPago/Http/HttpRequest.php';
