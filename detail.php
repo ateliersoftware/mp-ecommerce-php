@@ -28,11 +28,8 @@ require __DIR__ . '/MercadoPago/MetaDataReader.php';
 // SDK de Mercado Pago
 //use MercadoPago\SDK as MercadoPago\SDK;
 
-
-echo "hola";
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('APP_USR-5617253480619740-020220-3bce461ec6dcba2e2594432de3a420d2-16319998');
-exit;
 ?>
 
 <!DOCTYPE html>
