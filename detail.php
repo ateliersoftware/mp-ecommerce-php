@@ -29,6 +29,8 @@ require __DIR__ . '/MercadoPago/MetaDataReader.php';
 require __DIR__ . '/MercadoPago/Entities/Preference.php';
 require __DIR__ . '/MercadoPago/Entities/Shared/Item.php';
 
+$url = "https://mp-certification.herokuapp.com/";
+
 // SDK de Mercado Pago
 //use MercadoPago\SDK as MercadoPago\SDK;
 
@@ -51,9 +53,9 @@ $item->picture_url = $_POST['img'];
 $preference->items = array($item);
 
 $preference->back_urls = [
-        "success"=> "https://mp-certification.herokuapp.com/mp-success.php",
-        "failure"=> "https://mp-certification.herokuapp.com/mp-failure.php",
-        "pending"=> "https://mp-certification.herokuapp.com/mp-pending.php"];
+        "success"=> $url."mp-success.php",
+        "failure"=> $url."mp-failure.php",
+        "pending"=> $url."mp-pending.php"];
 
 $preference->save();
 ?>
@@ -191,7 +193,7 @@ $preference->save();
                                         </h3>
                                         <h3 >
                                             <?php echo $_POST['unit'] ?> unidad
-                                                <?=$_POST['img']?>
+                                                <?=$url.$_POST['img']?>
                                         </h3>
                                     </div>
                                     <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
