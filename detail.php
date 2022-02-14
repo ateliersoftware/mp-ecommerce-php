@@ -5,6 +5,7 @@ error_reporting(E_ALL);
 
 //require __DIR__ .  '/vendor/autoload.php';
 require __DIR__ . '/lib/Doctrine/Common/Lexer/AbstractLexer.php';
+require __DIR__ . '/lib/Doctrine/Common/Annotations/NamedArgumentConstructorAnnotation.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/TokenParser.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/PhpParser.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/DocParser.php';
