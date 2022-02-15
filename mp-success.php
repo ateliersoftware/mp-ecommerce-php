@@ -3,10 +3,10 @@
   ini_set('display_startup_errors', '1');
   error_reporting(E_ALL);
 
-  $fichero = __DIR__ .'/success.log';
+  $fichero = __DIR__ .'/logs.log';
 
   
-  $fp = fopen( __DIR__ .'/success.log', 'a');
+  $fp = fopen( __DIR__ .'/logs.log', 'a');
 
 fwrite($fp, "request");
 $req_dump = print_r($_REQUEST, TRUE);
