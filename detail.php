@@ -208,9 +208,9 @@ $preference->save();
                                             <?php echo $_POST['unit'] ?> unidad
                                         </h3>
                                     </div>
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    <!--<button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>-->
                                     <!--<script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="<?php echo $preference->id; ?>"></script>-->
-                                    <a href="<?php echo $preference->init_point; ?>">Pagar la compra</a>
+                                    <a class="mercadopago-button" href="<?php echo $preference->init_point; ?>" style="padding:1em;">Pagar la compra</a>
                                 </div>
                             </div>
                         </div>
