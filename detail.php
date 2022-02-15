@@ -64,15 +64,15 @@ $payer->date_created = "2018-06-02T12:58:41.425-04:00";
     "number" => "22223333"
   );
   
-  $payer->identification = array(
+  /*$payer->identification = array(
     "type" => "DNI",
     "number" => "12345678"
-  );
+  );*/
   
   $payer->address = array(
-    "street_name" => "Cuesta Miguel Armendáriz",
-    "street_number" => 1004,
-    "zip_code" => "11020"
+    "street_name" => "Falsa",
+    "street_number" => 123,
+    "zip_code" => "1111"
   );
 
 // Crea un ítem en la preferencia
@@ -90,7 +90,7 @@ $preference->back_urls = [
         "success"=> $url."mp-success.php",
         "failure"=> $url."mp-failure.php",
         "pending"=> $url."mp-pending.php"];
-$preference->notification_url = '';
+$preference->notification_url = $url.'confirmation.php';
 
 $preference->auto_return = "approved";
 
