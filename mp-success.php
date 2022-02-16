@@ -100,10 +100,10 @@ fwrite($fp, $req_dump);
 
                 <div id="accessories-tab" class="as-accessories-details">
                     <div class="as-accessories" id="as-accessories">
-                      El pago ha sido aprobado. <br>
-                      <p>payment_method_id: <?= $resultado['payment_method_id'];?></p>
+                      El pago ha sido <?=isset($resultado['collection_status'])?$resultado['collection_status']:$resultado['status']?>. <br>
+                      <p>payment_method_id: <?= $resultado['payment_type'];?></p>
                       <p>external_reference: <?= $resultado['external_reference'];?></p>
-                      <p>collection_id: <?= $resultado['collection_id'];?></p>
+                      <p>collection_id: <?= isset($resultado['collection_id'])?$resultado['collection_id']:$resultado['payment_id'];?></p>
                     </div>
                 </div>
             </div>
