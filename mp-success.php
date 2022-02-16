@@ -6,7 +6,7 @@
   $fp = fopen( __DIR__ .'/logs.log', 'a');
 
 fwrite($fp, "SUCCESS");
-fwrite($fp, "request");
+/*fwrite($fp, "request");
 $req_dump = print_r($_REQUEST, TRUE);
   fwrite($fp, $req_dump);
 
@@ -17,7 +17,12 @@ $req_dump = print_r($_REQUEST, TRUE);
 
 fwrite($fp, "post");
   $req_dump = print_r($_POST, TRUE);
-  fwrite($fp, $req_dump);
+  fwrite($fp, $req_dump);*/
+
+$resultado = array_merge($_REQUEST, $_GET);
+$resultado = array_merge($resultado, $_POST);
+$req_dump = print_r($resultado, TRUE);
+fwrite($fp, $req_dump);
   fclose($fp);
 
 ?>
@@ -95,8 +100,10 @@ fwrite($fp, "post");
 
                 <div id="accessories-tab" class="as-accessories-details">
                     <div class="as-accessories" id="as-accessories">
-                        
-
+                      El pago ha sido aprobado. <br>
+                      <p>payment_method_id: <?= $resultado['payment_method_id'];?></p>
+                      <p>external_reference: <?= $resultado['external_reference'];?></p>
+                      <p>collection_id: <?= $resultado['collection_id'];?></p>
                     </div>
                 </div>
             </div>
