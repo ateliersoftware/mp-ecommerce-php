@@ -1,11 +1,11 @@
 <?php
-  ini_set('display_errors', '1');
+  /*ini_set('display_errors', '1');
   ini_set('display_startup_errors', '1');
-  error_reporting(E_ALL);
+  error_reporting(E_ALL);*/
 
   $fp = fopen( __DIR__ .'/logs.log', 'a');
 
-fwrite($fp, "SUCCESS");
+fwrite($fp, "PENDING");
 /*fwrite($fp, "request");
 $req_dump = print_r($_REQUEST, TRUE);
   fwrite($fp, $req_dump);
