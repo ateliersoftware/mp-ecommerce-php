@@ -47,15 +47,16 @@ fwrite($fp, "CONFIRMATION AL WEBHOOK");
 
 $resultado = array_merge($_REQUEST, $_GET);
 $resultado = array_merge($resultado, $_POST);
-$req_dump = print_r($resultado, TRUE);
+//$req_dump = print_r($resultado, TRUE);
+$req_dump = json_encode($resultado);
 fwrite($fp, $req_dump);
 
-$info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
-$req_dump = print_r($info, true);
+$info = MercadoPago\SDK::post('/merchant_orders/'.$resultado['id']);
+//$req_dump = print_r($info, true);
+//fwrite($fp, '----');
+//fwrite($fp, $req_dump);
 fwrite($fp, '----');
-fwrite($fp, $req_dump);
-fwrite($fp, '----');
-fwrite($fp, $info);
+fwrite($fp, json_encode($info));
 fwrite($fp, '----FIN----');
 
   fclose($fp);
