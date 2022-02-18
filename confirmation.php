@@ -1,5 +1,9 @@
 <?php
 
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 require __DIR__ . '/lib/Doctrine/Common/Lexer/AbstractLexer.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/NamedArgumentConstructorAnnotation.php';
 require __DIR__ . '/lib/Doctrine/Common/Annotations/TokenParser.php';
