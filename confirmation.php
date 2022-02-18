@@ -1,7 +1,7 @@
 <?php
   $fp = fopen( __DIR__ .'/logs.log', 'a');
 
-fwrite($fp, "CONFIRMATION");
+fwrite($fp, "CONFIRMATION AL WEBHOOK");
 /*fwrite($fp, "request");
 $req_dump = print_r($_REQUEST, TRUE);
   fwrite($fp, $req_dump);
