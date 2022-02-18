@@ -50,11 +50,10 @@ $resultado = array_merge($resultado, $_POST);
 $req_dump = print_r($resultado, TRUE);
 fwrite($fp, $req_dump);
 
-//$info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
-$info = MercadoPago\SDK::get('/merchant_orders/20292587612');
-echo var_dump($info);
+$info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
 $req_dump = print_r($info, true);
 fwrite($fp, $req_dump);
+fwrite($fp, $info);
 
   fclose($fp);
 
