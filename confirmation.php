@@ -52,6 +52,26 @@ $req_dump = json_encode($resultado);
 fwrite($fp, $req_dump);
 fwrite($fp, '------------------------>Pido el merchant order \n');
 $info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
+
+/*switch($_POST["type"]) {
+      case "payment":
+          $payment = MercadoPago\Payment::find_by_id($_POST["data"]["id"]);
+          break;
+      case "plan":
+          $plan = MercadoPago\Plan::find_by_id($_POST["data"]["id"]);
+          break;
+      case "subscription":
+          $plan = MercadoPago\Subscription::find_by_id($_POST["data"]["id"]);
+          break;
+      case "invoice":
+          $plan = MercadoPago\Invoice::find_by_id($_POST["data"]["id"]);
+          break;
+      case "point_integration_wh":
+          // $_POST contiene la informaciòn relacionada a la notificaciòn.
+          break;
+  }*/
+
+
 fwrite($fp, json_encode($info));
 fwrite($fp, '----FIN----');
 
