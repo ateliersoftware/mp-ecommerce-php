@@ -94,7 +94,7 @@ $preference->notification_url = $url.'confirmation.php';
 
 $preference->auto_return = "approved";
 
-$preference->external_reference = "aldana@ateliersoftware.com.ar";
+$preference->external_reference = "jose@ateliersoftware.com.ar";
 
 $preference->save();
 ?>
