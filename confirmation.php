@@ -52,8 +52,11 @@ fwrite($fp, $req_dump);
 
 $info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
 $req_dump = print_r($info, true);
+fwrite($fp, '----');
 fwrite($fp, $req_dump);
+fwrite($fp, '----');
 fwrite($fp, $info);
+fwrite($fp, '----FIN----');
 
   fclose($fp);
 
