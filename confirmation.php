@@ -52,7 +52,7 @@ $req_dump = json_encode($resultado);
 fwrite($fp, $req_dump);
 
 //$info = MercadoPago\SDK::post('/merchant_orders/'.$resultado['id']);
-$info = MercadoPago\SDK::post('/merchant_orders/4180348052');
+$info = MercadoPago\SDK::get('/merchant_orders/4180348052');
 echo var_dump($info);
 $req_dump = print_r($info, true);
 //fwrite($fp, '----');
