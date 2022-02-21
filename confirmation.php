@@ -31,6 +31,9 @@ require __DIR__ . '/MercadoPago/Entities/Shared/Item.php';
 require __DIR__ . '/MercadoPago/Entities/Shared/Payer.php';
 require __DIR__ . '/MercadoPago/Entities/Shared/PaymentMethod.php';
 
+require __DIR__ . '/MercadoPago/Entities/Shared/Payment.php';
+require __DIR__ . '/MercadoPago/Entities/Invoice.php';
+
 $url = "https://mp-certification.herokuapp.com/";
 
 // SDK de Mercado Pago
