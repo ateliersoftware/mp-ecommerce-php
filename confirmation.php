@@ -53,10 +53,10 @@ $resultado = array_merge($resultado, $_POST);
 //$req_dump = print_r($resultado, TRUE);
 $req_dump = json_encode($resultado);
 fwrite($fp, $req_dump);
-fwrite($fp, '------------------------>Pido el merchant order \n');
-//$info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
+fwrite($fp, '------------------------>Pido el merchant order /n');
+$info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
 
-switch($resultado["type"]) {
+/*switch($resultado["type"]) {
       case "payment":
           $plan = MercadoPago\Payment::find_by_id($resultado["data_id"]);
           break;
@@ -72,10 +72,10 @@ switch($resultado["type"]) {
       case "point_integration_wh":
           // $_POST contiene la informaciòn relacionada a la notificaciòn.
           break;
-  }
+  }*/
 
 
-fwrite($fp, json_encode($plan));
+fwrite($fp, json_encode($info));
 fwrite($fp, '----FIN----');
 
   fclose($fp);
