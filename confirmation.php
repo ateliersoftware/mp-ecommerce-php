@@ -60,8 +60,8 @@ fwrite($fp, '------------------------>Pido el merchant order /n');
 $inputJSON = file_get_contents('php://input');
 fwrite($fp, $inputJSON);
 fwrite($fp, "-----------------zzzz");
-$input = json_decode($inputJSON, TRUE); //convert JSON into array
-fwrite($fp, $input);
+/*$input = json_decode($inputJSON, TRUE); //convert JSON into array
+fwrite($fp, $input);*/
 
 /*switch($resultado["type"]) {
       case "payment":
