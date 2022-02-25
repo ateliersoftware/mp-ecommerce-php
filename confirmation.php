@@ -56,8 +56,8 @@ fwrite($fp, $req_dump);
 fwrite($fp, '------------------------>Pido el merchant order /n');
 //$info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
 fwrite($fp, $resultado["type"]);
-fwrite($fp, $resultado["type"]);
-switch($resultado["data_id"]) {
+fwrite($fp, $resultado["data_id"]);
+switch($resultado["type"]) {
       case "payment":
           $plan = MercadoPago\Payment::find_by_id($resultado["data_id"]);
       fwrite($fp, "Hola->");
