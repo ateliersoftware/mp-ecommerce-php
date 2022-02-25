@@ -79,8 +79,7 @@ fwrite($fp, '------------------------>Pido el merchant order /n');
 $plan = MercadoPago\Payment::find_by_id(20451041939);
 $plan2 = MercadoPago\Payment::find_by_id(4222148490);
 
-echo var_dump($plan);
-echo var_dump($plan2);
+echo json_encode($plan);
 
 
 //fwrite($fp, json_encode($info));
