@@ -75,6 +75,8 @@ $payer->date_created = "2018-06-02T12:58:41.425-04:00";
     "zip_code" => "1111"
   );
 
+$preference->payer = $payer;
+
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->id = '1234';
