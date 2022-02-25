@@ -55,7 +55,9 @@ $req_dump = json_encode($resultado);
 fwrite($fp, $req_dump);
 fwrite($fp, '------------------------>Pido el merchant order /n');
 //$info = MercadoPago\SDK::get('/merchant_orders/'.$resultado['id']);
-fwrite($fp, file_get_contents());
+$inputJSON = file_get_contents('php://input');
+$input = json_decode($inputJSON, TRUE); //convert JSON into array
+fwrite($fp, $input);
 
 /*switch($resultado["type"]) {
       case "payment":
